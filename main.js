@@ -34,12 +34,17 @@ console.log(singer);
 
 // console.log(userObj.fullName()) // John Smith
 
-function getFullName(singer) {
-    return `${singer.firstName} ${singer.lastName}`;
-}
-
-console.log(getFullName(singer));
-
+const userObj = {
+    firstName: "Amy",
+    lastName: "Winehouse",
+    age: 27,
+    
+    fullName() {
+      return this.firstName + ' ' + this.lastName;
+    }
+  };
+  
+  
 /*
  * #3
  *
